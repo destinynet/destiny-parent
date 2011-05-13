@@ -255,7 +255,6 @@
     <module>../destiny-web</module>
     <module>../destiny-webapp-servlets</module>
     <module>../destiny-wicket</module>
-    <module>../destiny-fengshui</module>
     <module>../destiny-oracles</module>
     <module>../destiny-app</module>
     <module>../destiny-war</module>
