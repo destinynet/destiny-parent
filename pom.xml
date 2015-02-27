@@ -10,16 +10,19 @@
   <url>http://destiny.xfiles.to</url>
 
   <properties>
-    <!-- <spring.version>3.1.0.RELEASE</spring.version> -->
     <spring.version>4.0.6.RELEASE</spring.version>
     <slf4j.version>[1.6.0,)</slf4j.version>
-    <!-- <hibernate.version>3.6.5.Final</hibernate.version> -->
-    <hibernate.version>4.3.6.Final</hibernate.version>
-    <mysql.version>5.1.12</mysql.version>
-    <httpclient.version>4.3.4</httpclient.version>
+    <hibernate.version>3.6.5.Final</hibernate.version>
+    <!-- <hibernate.version>4.2.15.Final</hibernate.version> -->
+    <bonecp.version>0.7.1.RELEASE</bonecp.version>
+    <!-- <bonecp.version>0.8.0.RELEASE</bonecp.version> -->
+    <mysql.version>5.1.29</mysql.version>
+    <httpclient.version>4.3.6</httpclient.version>
+    <guice.version>4.0-beta5</guice.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <!--
   <repositories>
     <repository>
       <id>bonecp-repo</id>
@@ -30,6 +33,7 @@
       </releases>
     </repository>
   </repositories>
+  -->
 
   <dependencies>
     <dependency>
@@ -98,8 +102,14 @@
       </plugin>
     </plugins>
   </reporting>
+
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+      </dependency>
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
@@ -114,6 +124,23 @@
         <scope>test</scope>
       </dependency>
       <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-persist</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-servlet</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+
+
+      <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>destiny-core</artifactId>
         <version>${project.version}</version>
@@ -121,6 +148,16 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>destiny-core-impl</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>destiny-resources</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>destiny-tools</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
@@ -226,6 +263,11 @@
         <artifactId>fluent-hc</artifactId>
         <version>${httpclient.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpmime</artifactId>
+        <version>${httpclient.version}</version>
+      </dependency>
 
 
       <dependency>
@@ -284,12 +326,12 @@
       <dependency>
         <groupId>com.jolbox</groupId>
         <artifactId>bonecp</artifactId>
-        <version>0.7.1.RELEASE</version>
+        <version>${bonecp.version}</version>
       </dependency>
       <dependency>
         <groupId>com.jolbox</groupId>
         <artifactId>bonecp-provider</artifactId>
-        <version>0.7.1.RELEASE</version>
+        <version>${bonecp.version}</version>
       </dependency>
       <dependency>
         <groupId>com.intellij</groupId>
@@ -307,6 +349,7 @@
   </distributionManagement>
 
   <modules>
+    <module>../destiny-tools</module>
     <module>../destiny-core</module>
     <module>../destiny-core-impl</module>
     <module>../destiny-guice-ee</module>
@@ -319,8 +362,6 @@
     <module>../destiny-app</module>
     <module>../destiny-war</module>
     <module>../destiny-resources</module>
-    <!-- <module>../destiny-gwt-chatroom</module>  -->
-
     <module>../swisseph</module>
   </modules>
 </project>
