@@ -172,7 +172,7 @@
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>destiny-data</artifactId>
+        <artifactId>destiny-gauquelin</artifactId>
         <version>${project.version}</version>
       </dependency>
 
@@ -353,7 +353,7 @@
     <module>../destiny-core</module>
     <module>../destiny-core-impl</module>
     <module>../destiny-guice-ee</module>
-    <module>../destiny-data</module>
+    <module>../destiny-gauquelin</module>
     <module>../destiny-iching</module>
     <module>../destiny-web</module>
     <module>../destiny-webapp-servlets</module>
