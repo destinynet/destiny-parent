@@ -12,7 +12,8 @@
   <properties>
     <spring.version>4.0.6.RELEASE</spring.version>
     <slf4j.version>[1.6.0,)</slf4j.version>
-    <hibernate.version>3.6.5.Final</hibernate.version>
+    <!--<hibernate.version>3.6.5.Final</hibernate.version>-->
+    <hibernate.version>4.3.8.Final</hibernate.version>
     <!-- <hibernate.version>4.2.15.Final</hibernate.version> -->
     <bonecp.version>0.7.1.RELEASE</bonecp.version>
     <!-- <bonecp.version>0.8.0.RELEASE</bonecp.version> -->
@@ -235,6 +236,11 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-ehcache</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-c3p0</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
       <dependency>
