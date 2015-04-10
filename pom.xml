@@ -17,7 +17,7 @@
     <!-- <hibernate.version>4.2.15.Final</hibernate.version> -->
     <bonecp.version>0.7.1.RELEASE</bonecp.version>
     <!-- <bonecp.version>0.8.0.RELEASE</bonecp.version> -->
-    <mysql.version>5.1.29</mysql.version>
+    <mysql.version>5.1.35</mysql.version>
     <httpclient.version>4.3.6</httpclient.version>
     <guice.version>3.0</guice.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,14 +93,14 @@
           <aggregate>true</aggregate>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>2.4</version>
-        <configuration>
-          <aggregate>true</aggregate>
-        </configuration>
-      </plugin>
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-jxr-plugin</artifactId>-->
+        <!--<version>2.5</version>-->
+        <!--<configuration>-->
+          <!--<aggregate>true</aggregate>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
     </plugins>
   </reporting>
 
@@ -344,6 +344,11 @@
         <artifactId>annotations</artifactId>
         <version>12.0</version>
       </dependency>
+      <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <distributionManagement>
@@ -365,7 +370,6 @@
     <module>../destiny-webapp-servlets</module>
     <module>../destiny-wicket</module>
     <module>../destiny-oracles</module>
-    <module>../destiny-app</module>
     <module>../destiny-war</module>
     <module>../destiny-resources</module>
     <module>../swisseph</module>
