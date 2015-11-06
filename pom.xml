@@ -184,6 +184,16 @@
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
+        <artifactId>destiny-wicket</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>destiny-webapp-servlets</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>destiny-gauquelin</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -330,6 +340,7 @@
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
         <version>1.8.6</version>
+        <scope>runtime</scope>
       </dependency>
       <dependency>
         <groupId>javax.validation</groupId>
