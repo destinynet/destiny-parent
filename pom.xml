@@ -11,7 +11,7 @@
 
   <properties>
     <spring.version>4.2.3.RELEASE</spring.version>
-    <slf4j.version>[1.6.0,)</slf4j.version>
+    <slf4j.version>[1.7.0,)</slf4j.version>
     <hibernate.version>4.3.8.Final</hibernate.version>
     <bonecp.version>0.7.1.RELEASE</bonecp.version>
     <!-- <bonecp.version>0.8.0.RELEASE</bonecp.version> -->
@@ -51,6 +51,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>LATEST</version>
+    </dependency>
+    <dependency>
+      <groupId>com.intellij</groupId>
+      <artifactId>annotations</artifactId>
+      <version>12.0</version>
     </dependency>
   </dependencies>
   <organization>
@@ -185,11 +190,6 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>destiny-wicket</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>${project.groupId}</groupId>
-        <artifactId>destiny-webapp-servlets</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
@@ -339,7 +339,7 @@
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
-        <version>1.8.6</version>
+        <version>1.8.7</version>
         <scope>runtime</scope>
       </dependency>
       <dependency>
@@ -356,11 +356,6 @@
         <groupId>com.jolbox</groupId>
         <artifactId>bonecp-provider</artifactId>
         <version>${bonecp.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.intellij</groupId>
-        <artifactId>annotations</artifactId>
-        <version>12.0</version>
       </dependency>
       <dependency>
         <groupId>javax</groupId>
@@ -386,7 +381,6 @@
     <module>../destiny-gauquelin</module>
     <module>../destiny-iching</module>
     <module>../destiny-web</module>
-    <module>../destiny-webapp-servlets</module>
     <module>../destiny-wicket</module>
     <module>../destiny-oracles</module>
     <module>../destiny-war</module>
