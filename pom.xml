@@ -14,7 +14,6 @@
     <slf4j.version>[1.7.0,)</slf4j.version>
     <hibernate.version>4.3.8.Final</hibernate.version>
     <bonecp.version>0.7.1.RELEASE</bonecp.version>
-    <!-- <bonecp.version>0.8.0.RELEASE</bonecp.version> -->
     <mysql.version>5.1.35</mysql.version>
     <httpclient.version>4.3.6</httpclient.version>
     <guice.version>3.0</guice.version>
