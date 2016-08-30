@@ -20,7 +20,7 @@
     <hibernate.version>4.3.11.Final</hibernate.version>
     <bonecp.version>0.7.1.RELEASE</bonecp.version>
     <mysql.version>5.1.35</mysql.version>
-    <httpclient.version>4.3.6</httpclient.version>
+    <httpclient.version>4.5.2</httpclient.version>
     <guice.version>3.0</guice.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
