@@ -15,10 +15,9 @@
   </organization>
 
   <properties>
-    <spring.version>4.3.2.RELEASE</spring.version>
+    <spring.version>4.3.7.RELEASE</spring.version>
     <slf4j.version>[1.7.0,)</slf4j.version>
-    <hibernate.version>5.2.5.Final</hibernate.version>
-    <bonecp.version>0.7.1.RELEASE</bonecp.version>
+    <hibernate.version>5.2.9.Final</hibernate.version>
     <mysql.version>5.1.35</mysql.version>
     <httpclient.version>4.5.2</httpclient.version>
     <guice.version>3.0</guice.version>
@@ -239,7 +238,8 @@
       <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
-        <version>1.9.2.RELEASE</version>
+        <!--<version>1.9.2.RELEASE</version>-->
+        <version>1.10.8.RELEASE</version>
       </dependency>
 
 
@@ -352,14 +352,9 @@
         <version>1.1.0.Final</version>
       </dependency>
       <dependency>
-        <groupId>com.jolbox</groupId>
-        <artifactId>bonecp</artifactId>
-        <version>${bonecp.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.jolbox</groupId>
-        <artifactId>bonecp-provider</artifactId>
-        <version>${bonecp.version}</version>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20160810</version>
       </dependency>
       <dependency>
         <groupId>javax</groupId>
