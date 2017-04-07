@@ -272,7 +272,7 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <!-- 2016-12 這裡並未與 core 同步 -->
-        <version>5.2.4.Final</version>
+        <version>5.2.5.Final</version>
         <scope>runtime</scope>
       </dependency>
       <dependency>
