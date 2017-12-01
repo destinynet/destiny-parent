@@ -18,7 +18,7 @@
     <kotlin.version>1.2.0</kotlin.version>
     <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
 
-    <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
+    <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
 
     <spring.version>4.3.13.RELEASE</spring.version>
     <slf4j.version>[1.7.0,)</slf4j.version>
@@ -89,6 +89,11 @@
             <goals>
               <goal>compile</goal>
             </goals>
+            <configuration>
+              <sourceDirs>
+                <sourceDir>${project.basedir}/src/main/java</sourceDir>
+              </sourceDirs>
+            </configuration>
           </execution>
           <execution>
             <id>test-compile</id>
