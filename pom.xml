@@ -15,7 +15,7 @@
   </organization>
 
   <properties>
-    <kotlin.version>1.2.40-eap-16</kotlin.version>
+    <kotlin.version>1.2.30</kotlin.version>
     <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
 
     <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
@@ -93,19 +93,6 @@
   </dependencies>
 
 
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>bintray.kotlin.eap</id>
-      <name>Bintray Kotlin EAP Repository</name>
-      <url>http://dl.bintray.com/kotlin/kotlin-eap</url>
-    </pluginRepository>
-  </pluginRepositories>
 
 
   <build>
