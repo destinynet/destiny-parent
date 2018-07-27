@@ -84,11 +84,6 @@
       <artifactId>kotlin-test-junit</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-test</artifactId>
-      <scope>test</scope>
-    </dependency>
 
   </dependencies>
 
@@ -157,14 +152,14 @@
             <phase>none</phase>
           </execution>
           <execution>
-            <id>java-compile</id>
+            <id>compile</id>
             <phase>compile</phase>
             <goals>
               <goal>compile</goal>
             </goals>
           </execution>
           <execution>
-            <id>java-test-compile</id>
+            <id>testCompile</id>
             <phase>test-compile</phase>
             <goals>
               <goal>testCompile</goal>
