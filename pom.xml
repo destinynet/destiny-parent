@@ -15,9 +15,8 @@
   </organization>
 
   <properties>
-    <kotlin.version>1.2.51</kotlin.version>
+    <kotlin.version>1.2.61</kotlin.version>
     <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
-
     <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
 
     <spring.version>4.3.13.RELEASE</spring.version>
@@ -199,7 +198,7 @@
       <dependency>
         <groupId>org.jetbrains.kotlinx</groupId>
         <artifactId>kotlinx-coroutines-core</artifactId>
-        <version>0.22.5</version>
+        <version>0.24.0</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
