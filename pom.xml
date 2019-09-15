@@ -43,7 +43,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.8.1</version> <!-- 2018-09 -->
+      <version>3.9</version> <!-- 2018-09 -->
     </dependency>
     <dependency>
       <groupId>com.intellij</groupId>
@@ -497,36 +497,4 @@
     </pluginRepository>
   </pluginRepositories>
 
-  <!--<distributionManagement>-->
-    <!--<repository>-->
-      <!--<id>nexus</id>-->
-      <!--<name>nexus</name>-->
-      <!--<url>http://flysun.net:8081/nexus/content/repositories/releases</url>-->
-    <!--</repository>-->
-  <!--</distributionManagement>-->
-
-  <!--<repositories>-->
-    <!--<repository>-->
-      <!--<id>nexus</id>-->
-      <!--<name>nexus</name>-->
-      <!--<url>http://flysun.net:8081/nexus/content/repositories/releases</url>-->
-    <!--</repository>-->
-  <!--</repositories>-->
-
-  <!--<modules>-->
-    <!--<module>../destiny-tools</module>-->
-    <!--<module>../destiny-core</module>-->
-    <!--<module>../destiny-charts</module>-->
-    <!--<module>../destiny-core-impl</module>-->
-    <!--<module>../destiny-ee</module>-->
-    <!--<module>../destiny-gauquelin</module>-->
-    <!--<module>../destiny-iching</module>-->
-    <!--<module>../destiny-web</module>-->
-    <!--<module>../destiny-wicket</module>-->
-    <!--<module>../destiny-oracles</module>-->
-    <!--<module>../destiny-war</module>-->
-    <!--<module>../destiny-resources</module>-->
-    <!--<module>../swisseph</module>-->
-    <!--&lt;!&ndash;<module>../destiny-forum</module>&ndash;&gt;-->
-  <!--</modules>-->
 </project>
