@@ -1,4 +1,3 @@
-.gitignore
 
 ##############################
 ## Java
@@ -6,7 +5,6 @@
 .mtj.tmp/
 *.war
 *.ear
-<<<<<<< HEAD
 *.zip
 *.tar.gz
 *.rar
@@ -38,4 +36,3 @@ out/
 *.iml
 *.ipr
 *.iws
->>>>>>> 27dc991f86f006944e345919d3c0a07368dea733
