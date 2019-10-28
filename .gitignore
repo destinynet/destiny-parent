@@ -1,4 +1,3 @@
-.gitignore
 
 ##############################
 ## Java
@@ -6,7 +5,6 @@
 .mtj.tmp/
 *.war
 *.ear
-<<<<<<< HEAD
 *.zip
 *.tar.gz
 *.rar
