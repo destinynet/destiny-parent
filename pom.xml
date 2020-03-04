@@ -15,7 +15,7 @@
   </organization>
 
   <properties>
-    <kotlin.version>1.3.61</kotlin.version>
+    <kotlin.version>1.3.70</kotlin.version>
     <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
     <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
     <serialization.version>0.14.0</serialization.version>
