@@ -113,7 +113,7 @@
           <compilerPlugins>
             <plugin>no-arg</plugin>
             <plugin>jpa</plugin>
-            <plugin>kotlinx-serialization</plugin>
+<!--            <plugin>kotlinx-serialization</plugin>-->
           </compilerPlugins>
         </configuration>
         <executions>
