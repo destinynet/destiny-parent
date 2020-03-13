@@ -109,6 +109,7 @@
         <configuration>
           <args>
             <arg>-Xjvm-default=enable</arg>
+            <arg>-Xopt-in=enable</arg>
           </args>
           <compilerPlugins>
             <plugin>no-arg</plugin>
