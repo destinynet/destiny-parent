@@ -367,7 +367,6 @@
       <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
-        <!-- 暫時得 FIX 在 2.0.9 , 否則 KRepositoryFactoryBean.getTargetRepository 會失效 -->
         <version>2.1.0.RELEASE</version>
       </dependency>
 
