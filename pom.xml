@@ -23,8 +23,8 @@
 
     <spring.version>5.2.4.RELEASE</spring.version>
     <slf4j.version>1.7.28</slf4j.version>
-    <hibernate.version>5.4.1.Final</hibernate.version>
-    <mysql.version>5.1.47</mysql.version>
+    <hibernate.version>5.4.13.Final</hibernate.version>
+    <mysql.version>8.0.19</mysql.version>
     <httpclient.version>4.5.7</httpclient.version>
     <guice.version>3.0</guice.version>
 
@@ -109,10 +109,16 @@
           <args>
             <arg>-Xjvm-default=enable</arg>
             <arg>-Xopt-in=enable</arg>
+            <arg>-Xjsr305=strict</arg>
           </args>
           <compilerPlugins>
             <plugin>no-arg</plugin>
             <plugin>jpa</plugin>
+            <plugin>spring</plugin>
+            <!--
+            spring includes all-open
+            <plugin>all-open</plugin>
+            -->
             <plugin>kotlinx-serialization</plugin>
           </compilerPlugins>
         </configuration>
@@ -142,6 +148,11 @@
           <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-maven-noarg</artifactId>
+            <version>${kotlin.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-maven-allopen</artifactId>
             <version>${kotlin.version}</version>
           </dependency>
           <dependency>
