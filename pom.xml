@@ -86,7 +86,6 @@
     <dependency>
       <groupId>io.github.microutils</groupId>
       <artifactId>kotlin-logging</artifactId>
-      <scope>compile</scope>
     </dependency>
 
   </dependencies>
