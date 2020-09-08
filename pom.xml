@@ -101,6 +101,7 @@
           <args>
             <arg>-Xjvm-default=enable</arg>
             <arg>-Xopt-in=enable</arg>
+            <arg>-Xopt-in=kotlin.RequiresOptIn</arg>
             <arg>-Xjsr305=strict</arg>
           </args>
           <compilerPlugins>
