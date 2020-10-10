@@ -70,24 +70,30 @@
       <artifactId>kotlin-reflect</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-coroutines-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-serialization-core</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-serialization-json</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-test-junit</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-serialization-core-jvm</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.jetbrains.kotlinx</groupId>-->
+<!--      <artifactId>kotlinx-serialization-json</artifactId>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-serialization-json-jvm</artifactId>
+    </dependency>
+
+
 
     <dependency>
       <groupId>io.github.microutils</groupId>
