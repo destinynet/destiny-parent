@@ -71,10 +71,16 @@
       <artifactId>kotlin-test-junit</artifactId>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-core</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-test</artifactId>
+    </dependency>
+
 
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
