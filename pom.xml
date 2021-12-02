@@ -110,6 +110,18 @@
 
 
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/main/java</directory>
+      </resource>
+      <resource>
+        <directory>src/main/kotlin</directory>
+      </resource>
+    </resources>
+
     <plugins>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -145,10 +157,10 @@
               <goal>compile</goal>
             </goals>
             <configuration>
-              <sourceDirs>
-                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
-                <sourceDir>${project.basedir}/src/main/java</sourceDir>
-              </sourceDirs>
+<!--              <sourceDirs>-->
+<!--                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>-->
+<!--                <sourceDir>${project.basedir}/src/main/java</sourceDir>-->
+<!--              </sourceDirs>-->
             </configuration>
           </execution>
           <execution>
