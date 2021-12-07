@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <version>0.0.1</version>
   <name>DestinyNet</name>
-  <url>http://destiny.to</url>
+  <url>https://destiny.to</url>
 
   <organization>
     <name>DestinyNet</name>
@@ -122,6 +122,8 @@
       </resource>
     </resources>
 
+
+
     <plugins>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -157,10 +159,10 @@
               <goal>compile</goal>
             </goals>
             <configuration>
-<!--              <sourceDirs>-->
-<!--                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>-->
-<!--                <sourceDir>${project.basedir}/src/main/java</sourceDir>-->
-<!--              </sourceDirs>-->
+              <sourceDirs>
+                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
+                <sourceDir>${project.basedir}/src/main/java</sourceDir>
+              </sourceDirs>
             </configuration>
           </execution>
           <execution>
