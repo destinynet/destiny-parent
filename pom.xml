@@ -129,10 +129,12 @@
         <configuration>
           <args>
             <arg>-Xjvm-default=all</arg>
-            <arg>-Xopt-in=enable</arg>
-            <arg>-Xopt-in=kotlin.RequiresOptIn</arg>
+            <arg>-opt-in=kotlin.RequiresOptIn</arg>
             <arg>-Xjsr305=strict</arg>
             <arg>-Xinline-classes</arg>
+            <arg>-Xskip-prerelease-check</arg>
+            <arg>-Xcontext-receivers</arg>
+<!--            <arg>-Xbackend-threads=4</arg>-->
           </args>
           <compilerPlugins>
             <plugin>no-arg</plugin>
