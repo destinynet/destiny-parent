@@ -21,7 +21,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.release>11</maven.compiler.release>
 
-    <kotlin.version>1.7.10</kotlin.version>
+    <kotlin.version>1.7.20</kotlin.version>
     <kotlin.compiler.jvmTarget>11</kotlin.compiler.jvmTarget>
     <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
     <java.version>11</java.version>
@@ -84,10 +84,6 @@
     </dependency>
 
 
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-serialization-core-jvm</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-serialization-json-jvm</artifactId>
