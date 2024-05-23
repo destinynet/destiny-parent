@@ -132,6 +132,7 @@
         <artifactId>kotlin-maven-plugin</artifactId>
         <version>${kotlin.version}</version>
         <configuration>
+          <apiVersion>${kotlin.version}</apiVersion>
           <args>
             <arg>-Xjvm-default=all</arg>
             <arg>-opt-in=kotlin.RequiresOptIn</arg>
