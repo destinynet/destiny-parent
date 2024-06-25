@@ -112,6 +112,7 @@
 
 
   <build>
+    <testSourceDirectory>src/test/kotlin</testSourceDirectory>
     <resources>
       <resource>
         <directory>${project.basedir}/src/main/resources</directory>
