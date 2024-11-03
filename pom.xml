@@ -21,9 +21,9 @@
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.release>17</maven.compiler.release>
 
-    <kotlin.version>1.9.23</kotlin.version>
+    <kotlin.version>2.0.21</kotlin.version>
     <kotlin.compiler.jvmTarget>17</kotlin.compiler.jvmTarget>
-    <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
+    <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
     <java.version>17</java.version>
 
 
@@ -134,7 +134,8 @@
         <artifactId>kotlin-maven-plugin</artifactId>
         <version>${kotlin.version}</version>
         <configuration>
-          <apiVersion>1.9</apiVersion>
+          <apiVersion>2.0</apiVersion>
+          <languageVersion>2.0</languageVersion>
           <args>
             <arg>-Xjvm-default=all</arg>
             <arg>-opt-in=kotlin.RequiresOptIn</arg>
