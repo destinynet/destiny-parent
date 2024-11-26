@@ -250,7 +250,7 @@
         <version>3.3.0</version>
         <configuration>
           <excludes>
-            <exclude>**/logback.xml</exclude>
+<!--            <exclude>**/logback.xml</exclude>-->
           </excludes>
         </configuration>
       </plugin>
