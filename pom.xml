@@ -147,17 +147,29 @@
           </args>
           <compilerPlugins>
             <plugin>no-arg</plugin>
-            <plugin>jpa</plugin>
-            <plugin>spring</plugin>
-            <!-- spring includes all-open -->
             <plugin>all-open</plugin>
             <plugin>kotlinx-serialization</plugin>
           </compilerPlugins>
 
           <pluginOptions>
-            <!-- Each annotation is placed on its own line -->
-            <option>all-open:annotation=destiny.tools.Impl</option>
+            <option>no-arg:annotation=jakarta.persistence.Entity</option>
+            <option>no-arg:annotation=jakarta.persistence.Embeddable</option>
+            <option>no-arg:annotation=jakarta.persistence.MappedSuperclass</option>
+
+            <option>all-open:annotation=org.springframework.stereotype.Component</option>
+            <option>all-open:annotation=org.springframework.context.annotation.Configuration</option>
+            <option>all-open:annotation=org.springframework.scheduling.annotation.Async</option>
+            <option>all-open:annotation=org.springframework.transaction.annotation.Transactional</option>
+            <option>all-open:annotation=org.springframework.cache.annotation.Cacheable</option>
+            <option>all-open:annotation=org.springframework.boot.test.context.SpringBootTest</option>
+            <option>all-open:annotation=jakarta.inject.Named</option>
+
+
+            <option>all-open:annotation=jakarta.persistence.Entity</option>
+            <option>all-open:annotation=jakarta.persistence.Embeddable</option>
+            <option>all-open:annotation=jakarta.persistence.MappedSuperclass</option>
           </pluginOptions>
+
         </configuration>
         <executions>
           <execution>
