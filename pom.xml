@@ -5,7 +5,7 @@
   <groupId>destiny</groupId>
   <artifactId>destiny-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>DestinyNet</name>
   <url>https://destiny.to</url>
 
@@ -15,7 +15,7 @@
   </organization>
 
   <properties>
-    <destiny.version>0.0.1</destiny.version>
+    <destiny.version>0.0.1-SNAPSHOT</destiny.version>
 
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -126,6 +126,15 @@
       </resource>
     </resources>
 
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
 
 
     <plugins>
@@ -321,6 +330,17 @@
     </dependencies>
   </dependencyManagement>
 
+
+  <distributionManagement>
+    <repository>
+      <id>gar</id>
+      <url>artifactregistry://asia-east1-maven.pkg.dev/destinyapp/destinyapp-maven</url>
+    </repository>
+    <snapshotRepository>
+      <id>gar</id>
+      <url>artifactregistry://asia-east1-maven.pkg.dev/destinyapp/destinyapp-maven</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 
 </project>
