@@ -17,14 +17,13 @@
   <properties>
     <destiny.version>0.0.1-SNAPSHOT</destiny.version>
 
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.release>21</maven.compiler.release>
 
-    <kotlin.version>2.1.20</kotlin.version>
-    <kotlin.compiler.jvmTarget>17</kotlin.compiler.jvmTarget>
+    <kotlin.version>2.2.21</kotlin.version>
+    <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-    <java.version>17</java.version>
 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -143,15 +142,16 @@
         <artifactId>kotlin-maven-plugin</artifactId>
         <version>${kotlin.version}</version>
         <configuration>
-          <apiVersion>2.1</apiVersion>
-          <languageVersion>2.1</languageVersion>
+          <apiVersion>2.2</apiVersion>
+          <languageVersion>2.2</languageVersion>
+          <jvmTarget>21</jvmTarget>
           <args>
             <arg>-Xjvm-default=all</arg>
             <arg>-opt-in=kotlin.RequiresOptIn</arg>
             <arg>-Xjsr305=strict</arg>
             <arg>-Xinline-classes</arg>
             <arg>-Xskip-prerelease-check</arg>
-            <arg>-Xcontext-receivers</arg>
+            <arg>-Xcontext-parameters</arg>
             <arg>-Xextended-compiler-checks</arg>
           </args>
           <compilerPlugins>
