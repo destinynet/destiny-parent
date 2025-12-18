@@ -25,6 +25,8 @@
     <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 
+    <!-- Default skip tests, but can be overridden with -DskipTests=false -->
+    <skipTests>true</skipTests>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -199,7 +201,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.4</version>
         <configuration>
-          <skipTests>true</skipTests>
+          <skipTests>${skipTests}</skipTests>
         </configuration>
       </plugin>
 
