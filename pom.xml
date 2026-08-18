@@ -133,16 +133,14 @@
         <version>${kotlin.version}</version>
         <extensions>true</extensions>
         <configuration>
-          <apiVersion>2.2</apiVersion>
-          <languageVersion>2.2</languageVersion>
+          <apiVersion>2.4</apiVersion>
+          <languageVersion>2.4</languageVersion>
           <jvmTarget>21</jvmTarget>
           <args>
-            <arg>-Xjvm-default=all</arg>
+            <arg>-jvm-default=enable</arg>
             <arg>-opt-in=kotlin.RequiresOptIn</arg>
             <arg>-Xjsr305=strict</arg>
-            <arg>-Xinline-classes</arg>
             <arg>-Xskip-prerelease-check</arg>
-            <arg>-Xcontext-parameters</arg>
             <arg>-Xextended-compiler-checks</arg>
           </args>
           <compilerPlugins>
